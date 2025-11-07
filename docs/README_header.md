@@ -5,13 +5,13 @@ your HCP Terraform teams.
 
 ## Permissions
 
-To manage resources, provide a user token from an account with 
-appropriate permissions. This user should have the `Manage organization access` permission. 
+To manage resources, provide a user token from an account with
+appropriate permissions. This user should have the `Manage organization access` permission.
 Alternatively, you can use a token from a team instead of a user token.
 
 ## Authentication
 
-The HCP Terraform provider requires a HCP Terraform/Terraform Enterprise API token in 
+The HCP Terraform provider requires a HCP Terraform/Terraform Enterprise API token in
 order to manage resources.
 
 There are several ways to provide the required token:
@@ -31,6 +31,7 @@ to authenticate.
 - Manage team's permissions on a workspace.
 
 ## Usage example
+
 ```hcl
 module "team" {
   source  = "app.terraform.io/benoitblais-hashicorp/team/tfe"
