@@ -32,6 +32,7 @@ to authenticate.
 - Manage team's permissions on a workspace.
 
 ## Usage example
+
 ```hcl
 module "team" {
   source  = "app.terraform.io/benoitblais-hashicorp/team/tfe"
