@@ -5,7 +5,7 @@ your HCP Terraform teams.
 
 ## Permissions
 
-To manage the agent pool resources, provide a user token from an account with 
+To manage resources, provide a user token from an account with 
 appropriate permissions. This user should have the `Manage organization access` permission. 
 Alternatively, you can use a token from a team instead of a user token.
 
@@ -37,7 +37,7 @@ module "team" {
   version = "0.0.0"
 
   name           = "Team Name"
-  sso_team_id    = "Microsoft Entra Group Id"
+  sso_team_id    = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
   organization   = "Organization Name"
   token          = true
 }
