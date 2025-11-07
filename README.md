@@ -6,7 +6,7 @@ your HCP Terraform teams.
 
 ## Permissions
 
-To manage the agent pool resources, provide a user token from an account with
+To manage resources, provide a user token from an account with
 appropriate permissions. This user should have the `Manage organization access` permission.
 Alternatively, you can use a token from a team instead of a user token.
 
@@ -32,13 +32,14 @@ to authenticate.
 - Manage team's permissions on a workspace.
 
 ## Usage example
+
 ```hcl
 module "team" {
   source  = "app.terraform.io/benoitblais-hashicorp/team/tfe"
   version = "0.0.0"
 
   name           = "Team Name"
-  sso_team_id    = "Microsoft Entra Group Id"
+  sso_team_id    = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
   organization   = "Organization Name"
   token          = true
 }
@@ -49,8 +50,6 @@ module "team" {
 ## Requirements
 
 The following requirements are needed by this module:
-
-- <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) (>= 1.13.0)
 
 - <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) (>= 1.13.0)
 
